@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Heavy rain">
+  <title>Heavy rain</title>
+  <g transform="translate(24 55) scale(0.86)">
+    <path d="M59 168C36 168 18 151 18 130C18 111 32 94 51 91C60 62 86 42 117 42C140 42 160 54 172 73C179 70 187 68 196 68C222 68 244 91 244 118C244 145 222 168 195 168H59Z" fill="#4F6F80" stroke="#23485D" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M45 126C49 108 64 100 79 100C89 73 110 57 136 57C151 57 166 63 177 75" fill="none" stroke="#9CB1BD" stroke-width="7" stroke-linecap="round" opacity="0.62"/>
+  </g>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(67 183) rotate(13) scale(0.58)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="1"/>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(99 202) rotate(13) scale(0.58)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="1"/>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(131 183) rotate(13) scale(0.58)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="1"/>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(163 202) rotate(13) scale(0.58)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="1"/>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(195 183) rotate(13) scale(0.58)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="1"/>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(83 216) rotate(13) scale(0.5)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="0.95"/>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(147 216) rotate(13) scale(0.5)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="0.95"/>
+</svg>

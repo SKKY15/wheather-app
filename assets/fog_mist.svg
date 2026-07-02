@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Fog mist">
+  <title>Fog mist</title>
+  <g transform="translate(43 36) scale(0.72)" opacity="0.6">
+    <path d="M59 168C36 168 18 151 18 130C18 111 32 94 51 91C60 62 86 42 117 42C140 42 160 54 172 73C179 70 187 68 196 68C222 68 244 91 244 118C244 145 222 168 195 168H59Z" fill="#C9D8E0" stroke="#6E8F9F" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M45 126C49 108 64 100 79 100C89 73 110 57 136 57C151 57 166 63 177 75" fill="none" stroke="#F3FAFD" stroke-width="7" stroke-linecap="round" opacity="0.62"/>
+  </g>
+  <path d="M42 121H204" fill="none" stroke="#94B1BE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.78"/>
+  <path d="M28 146H187" fill="none" stroke="#94B1BE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.78"/>
+  <path d="M61 171H220" fill="none" stroke="#94B1BE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.72"/>
+  <path d="M38 197H143" fill="none" stroke="#94B1BE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.66"/>
+  <path d="M155 197H207" fill="none" stroke="#94B1BE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Sleet mix">
+  <title>Sleet mix</title>
+  <g transform="translate(28 58) scale(0.83)">
+    <path d="M59 168C36 168 18 151 18 130C18 111 32 94 51 91C60 62 86 42 117 42C140 42 160 54 172 73C179 70 187 68 196 68C222 68 244 91 244 118C244 145 222 168 195 168H59Z" fill="#C9D8E0" stroke="#6E8F9F" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M45 126C49 108 64 100 79 100C89 73 110 57 136 57C151 57 166 63 177 75" fill="none" stroke="#F3FAFD" stroke-width="7" stroke-linecap="round" opacity="0.62"/>
+  </g>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(77 190) rotate(13) scale(0.55)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="1"/>
+  <path d="M0 -15C10 -2 16 9 16 18C16 29 9 37 0 37C-9 37 -16 29 -16 18C-16 9 -10 -2 0 -15Z" transform="translate(173 190) rotate(13) scale(0.55)" fill="#24A8E0" stroke="#087FB8" stroke-width="2.5" opacity="1"/>
+  <circle cx="125" cy="196" r="8" fill="#F6FBFE" stroke="#7E9EAD" stroke-width="4"/>
+  <g stroke="#B6CCD8" stroke-width="3" stroke-linecap="round">
+    <line x1="144" y1="220" x2="164" y2="220"/>
+    <line x1="149" y1="211.34" x2="159" y2="228.66"/>
+    <line x1="159" y1="211.34" x2="149" y2="228.66"/>
+    <circle cx="154" cy="220" r="1.95" fill="#B6CCD8" stroke="none"/>
+  </g>
+  <g stroke="#B6CCD8" stroke-width="3" stroke-linecap="round">
+    <line x1="91" y1="220" x2="111" y2="220"/>
+    <line x1="96" y1="211.34" x2="106" y2="228.66"/>
+    <line x1="106" y1="211.34" x2="96" y2="228.66"/>
+    <circle cx="101" cy="220" r="1.95" fill="#B6CCD8" stroke="none"/>
+  </g>
+</svg>

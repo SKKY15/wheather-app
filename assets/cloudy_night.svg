@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Cloudy night">
+  <title>Cloudy night</title>
+  <path d="M 104 92 a 50 50 0 1 0 100 0 a 50 50 0 1 0 -100 0 M 133 75 a 50 50 0 1 0 100 0 a 50 50 0 1 0 -100 0" fill="#FFD45A" stroke="#EAA21A" stroke-width="5" fill-rule="evenodd"/>
+  <polygon points="207,56 208.44,60.56 213,62 208.44,63.44 207,68 205.56,63.44 201,62 205.56,60.56" fill="#FFD447"/>
+  <g transform="translate(19 88) scale(0.87)">
+    <path d="M59 168C36 168 18 151 18 130C18 111 32 94 51 91C60 62 86 42 117 42C140 42 160 54 172 73C179 70 187 68 196 68C222 68 244 91 244 118C244 145 222 168 195 168H59Z" fill="#4F6F80" stroke="#23485D" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M45 126C49 108 64 100 79 100C89 73 110 57 136 57C151 57 166 63 177 75" fill="none" stroke="#9CB1BD" stroke-width="7" stroke-linecap="round" opacity="0.62"/>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Snow">
+  <title>Snow</title>
+  <g transform="translate(29 59) scale(0.82)">
+    <path d="M59 168C36 168 18 151 18 130C18 111 32 94 51 91C60 62 86 42 117 42C140 42 160 54 172 73C179 70 187 68 196 68C222 68 244 91 244 118C244 145 222 168 195 168H59Z" fill="#EAF4F8" stroke="#7E9EAD" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M45 126C49 108 64 100 79 100C89 73 110 57 136 57C151 57 166 63 177 75" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.62"/>
+  </g>
+  <g stroke="#B6CCD8" stroke-width="4" stroke-linecap="round">
+    <line x1="69" y1="188" x2="95" y2="188"/>
+    <line x1="75.5" y1="176.74" x2="88.5" y2="199.26"/>
+    <line x1="88.5" y1="176.74" x2="75.5" y2="199.26"/>
+    <circle cx="82" cy="188" r="2.6" fill="#B6CCD8" stroke="none"/>
+  </g>
+  <g stroke="#B6CCD8" stroke-width="4" stroke-linecap="round">
+    <line x1="114" y1="205" x2="142" y2="205"/>
+    <line x1="121" y1="192.88" x2="135" y2="217.12"/>
+    <line x1="135" y1="192.88" x2="121" y2="217.12"/>
+    <circle cx="128" cy="205" r="2.6" fill="#B6CCD8" stroke="none"/>
+  </g>
+  <g stroke="#B6CCD8" stroke-width="4" stroke-linecap="round">
+    <line x1="161" y1="188" x2="187" y2="188"/>
+    <line x1="167.5" y1="176.74" x2="180.5" y2="199.26"/>
+    <line x1="180.5" y1="176.74" x2="167.5" y2="199.26"/>
+    <circle cx="174" cy="188" r="2.6" fill="#B6CCD8" stroke="none"/>
+  </g>
+  <g stroke="#B6CCD8" stroke-width="3" stroke-linecap="round">
+    <line x1="95" y1="224" x2="115" y2="224"/>
+    <line x1="100" y1="215.34" x2="110" y2="232.66"/>
+    <line x1="110" y1="215.34" x2="100" y2="232.66"/>
+    <circle cx="105" cy="224" r="1.95" fill="#B6CCD8" stroke="none"/>
+  </g>
+  <g stroke="#B6CCD8" stroke-width="3" stroke-linecap="round">
+    <line x1="141" y1="224" x2="161" y2="224"/>
+    <line x1="146" y1="215.34" x2="156" y2="232.66"/>
+    <line x1="156" y1="215.34" x2="146" y2="232.66"/>
+    <circle cx="151" cy="224" r="1.95" fill="#B6CCD8" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Partly cloudy">
+  <title>Partly cloudy</title>
+  <g>
+    <line x1="91" y1="39" x2="91" y2="15" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="118.5" y1="46.37" x2="130.5" y2="25.58" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="138.63" y1="66.5" x2="159.42" y2="54.5" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="146" y1="94" x2="170" y2="94" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="138.63" y1="121.5" x2="159.42" y2="133.5" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="118.5" y1="141.63" x2="130.5" y2="162.42" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="91" y1="149" x2="91" y2="173" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="63.5" y1="141.63" x2="51.5" y2="162.42" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="43.37" y1="121.5" x2="22.58" y2="133.5" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="36" y1="94" x2="12" y2="94" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="43.37" y1="66.5" x2="22.58" y2="54.5" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <line x1="63.5" y1="46.37" x2="51.5" y2="25.58" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="91" cy="94" r="40" fill="#FFD43B" stroke="#F59E0B" stroke-width="5"/>
+    <circle cx="79.8" cy="81.2" r="8" fill="#FFF3A3" opacity="0.65"/>
+  </g>
+  <g transform="translate(62 88) scale(0.72)">
+    <path d="M59 168C36 168 18 151 18 130C18 111 32 94 51 91C60 62 86 42 117 42C140 42 160 54 172 73C179 70 187 68 196 68C222 68 244 91 244 118C244 145 222 168 195 168H59Z" fill="#EAF4F8" stroke="#7E9EAD" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M45 126C49 108 64 100 79 100C89 73 110 57 136 57C151 57 166 63 177 75" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.62"/>
+  </g>
+</svg>
