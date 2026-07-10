@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import './models/card_item.dart';
 
 void main() {
   runApp(const MainApp());
@@ -106,6 +107,16 @@ class MainApp extends StatelessWidget {
                             ),
                             SizedBox(height: 12),
                             
+                            SizedBox(
+                              height: 140,
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: 10,
+                                itemBuilder: ((context, index) {
+                                  return CardItem();
+                                })
+                              ),
+                            )
                         ],
                       )
                     )
