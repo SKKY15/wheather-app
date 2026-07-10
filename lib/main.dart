@@ -53,6 +53,7 @@ class MainApp extends StatelessWidget {
                   glassCard(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -82,14 +83,31 @@ class MainApp extends StatelessWidget {
                         ),
                         
                         SvgPicture.asset("assets/rain_alt.svg",
-                        alignment: AlignmentGeometry.center,
-                        width: 150, height: 150),
+                        width: 200, height: 200),
                         
                         
                       ],
                     )
+                    ),
                     
-                    
+                    SizedBox(height: 16),
+
+
+                    glassCard(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                            Text("Hourly forecast",
+                              style: TextStyle(
+                                color : Colors.white,
+                                fontSize: 24,
+                                
+                              ),
+                            ),
+                            SizedBox(height: 12),
+                            
+                        ],
+                      )
                     )
                 ]
               ),
