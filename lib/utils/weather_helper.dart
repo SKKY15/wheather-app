@@ -73,12 +73,14 @@ String getWeatherDescription(int code) {
 
 String getWeatherIcon(int code, {required bool isDay}) {
   if (!isDay) {
-    if (code == 0) {
-      return "assets/clear_night.svg";
-    }
+    switch (code) {
+      case 0:
+        return 'assets/clear_night.svg';
 
-    if (code == 1 || code == 2) {
-      return "assets/cloudy_night.svg";
+      case 1:
+      case 2:
+      case 3:
+        return 'assets/cloudy_night.svg';
     }
   }
 

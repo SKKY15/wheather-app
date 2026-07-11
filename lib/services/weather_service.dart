@@ -5,8 +5,8 @@ import '../models/weather_model.dart';
 
 class WeatherService {
   Future<WeatherModel> getWeather({
-      required latitude,
-      required longitude
+      required double latitude,
+      required double longitude
   }) async {
     final uri = Uri.https(
       'api.open-meteo.com',
@@ -34,23 +34,24 @@ class WeatherService {
 
     final json = jsonDecode(response.body) as Map<String, dynamic>;
     final currentJson = json['current'] as Map<String, dynamic>;
-    final HourlyJson = json['hourly'] as Map<String, dynamic>;
+    final hourlyJson = json['hourly'] as Map<String, dynamic>;
     final dailyJson = json['daily'] as Map<String, dynamic>;
+
 
     final currentTime = DateTime.parse(
       currentJson['time'] as String
     );
     final hourlyTime = List<String>.from(
-      HourlyJson['time'] as List
+      hourlyJson['time'] as List
     );
     final hourlyTemperatures = List<num>.from(
-      HourlyJson['temperature_2m'] as List
+      hourlyJson['temperature_2m'] as List
     );
     final hourlyCodes = List<num>.from(
-      HourlyJson['weather_code'] as List
+      hourlyJson['weather_code'] as List
     );
      final hourlyIsDay = List<num>.from(
-      HourlyJson['is_day'] as List,
+      hourlyJson['is_day'] as List,
     );
 
     final currentHour = DateTime(

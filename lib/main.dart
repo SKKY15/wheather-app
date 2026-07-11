@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:weather_app/utils/weather_helper.dart';
 import './models/card_item.dart';
 //import 'package:geolocator/geolocator.dart';
-import 'package:geocoding/geocoding.dart';
-import 'package:flutter/foundation.dart';
+//import 'package:geocoding/geocoding.dart';
+// import 'package:flutter/foundation.dart';
 import './models/weather_model.dart';
 import './services/weather_service.dart';
 
@@ -398,15 +398,15 @@ Widget _buildWeatherContent() {
     ),
   );
 }
-bool get _supportsNativeGeocoding {
-  if (kIsWeb) {
-    return false;
-  }
+// bool get _supportsNativeGeocoding {
+//   if (kIsWeb) {
+//     return false;
+//   }
 
-  return defaultTargetPlatform == TargetPlatform.android ||
-      defaultTargetPlatform == TargetPlatform.iOS ||
-      defaultTargetPlatform == TargetPlatform.macOS;
-}
+//   return defaultTargetPlatform == TargetPlatform.android ||
+//       defaultTargetPlatform == TargetPlatform.iOS ||
+//       defaultTargetPlatform == TargetPlatform.macOS;
+// }
 }
 
 
