@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:weather_app/utils/weather_helper.dart';
 import './models/card_item.dart';
-//import 'package:geolocator/geolocator.dart';
-//import 'package:geocoding/geocoding.dart';
+// import 'package:geolocator/geolocator.dart';
+// import 'package:geocoding/geocoding.dart';
 // import 'package:flutter/foundation.dart';
 import './models/weather_model.dart';
 import './services/weather_service.dart';
-
+import 'package:intl/intl.dart';
 void main() {
   runApp(const MainApp());
 }
@@ -30,6 +30,16 @@ class _MainAppState extends State<MainApp> {
   String _locationName = 'Current location';
   String? _errorMessage;
   bool _isLoading = true;
+
+  final days = [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+  ];
 
   @override
   void initState() {
@@ -393,6 +403,53 @@ Widget _buildWeatherContent() {
               ],
             ),
           ),
+
+          SizedBox(height : 8),
+          glassCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children : [
+                Text("Daily forecast", style : TextStyle(
+                  color : Colors.white,
+                  fontSize: 24
+                )),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      spacing: 2,
+                      children: List.generate(_weather!.daily.length, (index) => Text(DateFormat('EEE').format(_weather!.daily[index].date), style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)))
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: List.generate(_weather!.daily.length, (index) => Text(DateFormat('MMM d').format(_weather!.daily[index].date),  style: TextStyle(color: const Color.fromARGB(170, 255, 255, 255), fontSize: 18)))
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children : List.generate(_weather!.daily.length, (index) => SvgPicture.asset(getWeatherIcon(_weather!.daily[index].weatherCode, isDay: true), width: 32, height: 32))
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: List.generate(_weather!.daily.length, (index) => Row(children: [
+                        Text("${_weather!.daily[index].maxTemp}° / ", style : TextStyle(
+                          color : Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize : 18
+                        )),
+                        Text("${_weather!.daily[index].minTemp}°", style : TextStyle(
+                          color : const Color.fromARGB(170, 255, 255, 255),
+                          fontSize : 18
+                        ))
+                      ],)),
+                    ),
+                  ],
+                )
+              ]
+            )            
+          ),
+
+
         ],
       ),
     ),

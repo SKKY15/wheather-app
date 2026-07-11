@@ -16,9 +16,9 @@ class WeatherService {
         'longitude': longitude.toString(),
         'current': 'temperature_2m,weather_code,is_day',
         'hourly': 'temperature_2m,weather_code,is_day',
-        'daily': 'temperature_2m_min,temperature_2m_max',
+        'daily': 'temperature_2m_min,temperature_2m_max,weather_code',
         'timezone' : 'auto',
-        'forecast_days' : '1',
+        'forecast_days' : '7',
 
 
       }
@@ -37,6 +37,12 @@ class WeatherService {
     final hourlyJson = json['hourly'] as Map<String, dynamic>;
     final dailyJson = json['daily'] as Map<String, dynamic>;
 
+    final dailyTimes = List<String>.from(
+      dailyJson['time'] as List,
+    );
+    final dailyCodes = List<num>.from(
+      dailyJson['weather_code'] as List
+    );
 
     final currentTime = DateTime.parse(
       currentJson['time'] as String
@@ -54,6 +60,14 @@ class WeatherService {
       hourlyJson['is_day'] as List,
     );
 
+   final minimumTemperatures = List<num>.from(
+      dailyJson['temperature_2m_min'] as List,
+    );
+
+    final maximumTemperatures = List<num>.from(
+      dailyJson['temperature_2m_max'] as List,
+    );
+    
     final currentHour = DateTime(
       currentTime.year,
       currentTime.month,
@@ -62,9 +76,21 @@ class WeatherService {
     );
 
     final hourlyWeather = <HourlyWeather>[];
+    final dailyWeather = <DailyWeather>[];
 
-    
+    for(int i = 1; i < dailyTimes.length; i++) {
+      dailyWeather.add(
+        DailyWeather(
+          date: DateTime.parse(dailyTimes[i]),
+          minTemp: minimumTemperatures[i].toDouble(),
+          maxTemp: maximumTemperatures[i].toDouble(),
+          weatherCode: dailyCodes[i].toInt()
+        )
+      );
+    }
+
     for (int index = 0; index < hourlyTime.length; index++) {
+      
       final time = DateTime.parse(hourlyTime[index]);
 
       if (time.isBefore(currentHour)) {
@@ -83,13 +109,7 @@ class WeatherService {
         break;
       }
     }
-    final minimumTemperatures = List<num>.from(
-      dailyJson['temperature_2m_min'] as List,
-    );
-
-    final maximumTemperatures = List<num>.from(
-      dailyJson['temperature_2m_max'] as List,
-    );
+   
 
     return WeatherModel(
       currentTime: currentTime,
@@ -98,7 +118,8 @@ class WeatherService {
       isDay: (currentJson['is_day'] as num).toInt() == 1, 
       minimumTemperature: minimumTemperatures.first.toDouble(), 
       maximumTemperature: maximumTemperatures.first.toDouble(), 
-      hourly: hourlyWeather
+      hourly: hourlyWeather,
+      daily : dailyWeather
       );
 
   }
