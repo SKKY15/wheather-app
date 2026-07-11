@@ -2,6 +2,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import './models/card_item.dart';
+import 'dart:math';
+import './utils/weather_helper.dart';
 
 void main() {
   runApp(const MainApp());
@@ -107,15 +109,22 @@ class MainApp extends StatelessWidget {
                             ),
                             SizedBox(height: 12),
                             
-                            SizedBox(
-                              height: 140,
-                              child: ListView.builder(
-                                scrollDirection: Axis.horizontal,
-                                itemCount: 10,
-                                itemBuilder: ((context, index) {
-                                  return CardItem();
-                                })
+                            SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child : Row(
+                                children: List.generate(24, (index) {
+                                  final random = Random();
+                                  int number = random.nextInt(41);
+                                    return CardItem(
+                                      time : index > 12 ? index - 12 : index,
+                                      isAm : index > 11 ? false : true,
+                                      pic : "assets/cloudy.svg",
+                                      degree : number,
+                                    );
+
+                                }),
                               ),
+                              
                             )
                         ],
                       )
