@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:weather_app/utils/weather_helper.dart';
+import 'package:weather_app/widgets/bottom_nav_bar.dart';
 import './models/card_item.dart';
 // import 'package:geolocator/geolocator.dart';
 // import 'package:geocoding/geocoding.dart';
@@ -71,7 +72,9 @@ class _MainAppState extends State<MainApp> {
           child: SafeArea(
             child : _buildBody()
           )
-           )
+          
+           ),
+          bottomNavigationBar: const Bottomnavbar(),
       ),
     );
   }
