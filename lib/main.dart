@@ -70,14 +70,24 @@ class _MainAppState extends State<MainApp> {
               ])
           ),
           child: SafeArea(
-            child : _buildBody()
+            child : Stack(
+             children: [
+              _buildBody(),
+              
+              Positioned(
+              
+                left: 16,
+                right: 16,
+                bottom: 16,
+                child: const Bottomnavbar(),
+              )
+            ]
           )
-          
-           ),
-          bottomNavigationBar: const Bottomnavbar(),
+        ),
+      ),
       ),
     );
-  }
+}
 
 
   /*Future<Position> _determinePosition() async {
@@ -452,6 +462,7 @@ Widget _buildWeatherContent() {
             )            
           ),
 
+          const SizedBox(height: 100),
 
         ],
       ),
